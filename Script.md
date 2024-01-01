@@ -25,8 +25,8 @@ cscript ospp.vbs /unpkey:6F7TH >nul
 cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
 cscript ospp.vbs /sethst:e8.us.to
 cscript ospp.vbs /act
-
 ```
+> **_NOTE:_**  Enter the last command `cscript ospp.vbs /act`
 - If you see the error `0xC004F074`, it means that your internet connection is unstable or the server is busy. Please make sure your device is online and try the command “act” again until you succeed.
 ### Here is all the text you will get in the command prompt window
 ```
