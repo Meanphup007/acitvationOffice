@@ -12,6 +12,8 @@ cd /d %ProgramFiles%\Microsoft Office\Office16
 ### Step 1.3: Install Office 2021 volume license.
 ```
 for /f %x in ('dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+```
+```
 cls
 ```
 - This step is required. You can not install the KMS client product key of Office without a volume license.
