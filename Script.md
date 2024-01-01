@@ -12,6 +12,7 @@ cd /d %ProgramFiles%\Microsoft Office\Office16
 ### Step 1.3: Install Office 2021 volume license.
 ```
 for /f %x in ('dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+cls
 ```
 - This step is required. You can not install the KMS client product key of Office without a volume license.
 ### Step 1.4: Activate your Office using the KMS key.
@@ -22,6 +23,7 @@ cscript ospp.vbs /unpkey:6F7TH >nul
 cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
 cscript ospp.vbs /sethst:e8.us.to
 cscript ospp.vbs /act
+
 ```
 - If you see the error `0xC004F074`, it means that your internet connection is unstable or the server is busy. Please make sure your device is online and try the command “act” again until you succeed.
 ### Here is all the text you will get in the command prompt window
